@@ -67,6 +67,7 @@
 					
 			$xml_str = self::getWeatherXml();
 		
+			/*
 			if(is_array($http_response_header))
 			{
 				foreach ($http_response_header as $header)
@@ -90,6 +91,7 @@
 					}
 				}
 			}
+			*/
 			
 			$xml = simplexml_load_string($xml_str);
 			
@@ -106,17 +108,17 @@
 				'farenheit'		=> $data['current_observation']['temp_f'],
 				'humidity'		=> $data['current_observation']['relative_humidity'],
 				'icon'			=> self::weatherIcon($data['current_observation']['icon']),
-				'wind'			=> (string)$xml->weather->current_conditions->wind_condition['data']
+				//'wind'			=> (string)$xml->weather->current_conditions->wind_condition['data']
 			);
-
-			$forecast = array(
+			
+		$forecast = array(
 				self::weatherSingleForecast($data['forecast']['simpleforecast']['forecastdays']['forecastday'][0]),
 				self::weatherSingleForecast($data['forecast']['simpleforecast']['forecastdays']['forecastday'][1]),
 				self::weatherSingleForecast($data['forecast']['simpleforecast']['forecastdays']['forecastday'][2]),
 				self::weatherSingleForecast($data['forecast']['simpleforecast']['forecastdays']['forecastday'][3]),
-				self::weatherSingleForecast($data['forecast']['simpleforecast']['forecastdays']['forecastday'][4]),
-				self::weatherSingleForecast($data['forecast']['simpleforecast']['forecastdays']['forecastday'][5]),
-				self::weatherSingleForecast($data['forecast']['simpleforecast']['forecastdays']['forecastday'][6]),
+				//self::weatherSingleForecast($data['forecast']['simpleforecast']['forecastdays']['forecastday'][4]),
+				//self::weatherSingleForecast($data['forecast']['simpleforecast']['forecastdays']['forecastday'][5]),
+				//self::weatherSingleForecast($data['forecast']['simpleforecast']['forecastdays']['forecastday'][6]),
 			);
 			
 			$_SESSION['weather'] = array(
