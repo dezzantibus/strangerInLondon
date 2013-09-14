@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<content>
+	<header>
+		<breadcrumbs>You are here:</breadcrumbs>
+		<link1>About</link1>
+		<link2>Contact</link2>
+	</header>
+	<menu>
+		<search>Search</search>
+		<go>Go</go>
+		<subjects>Subjects</subjects>
+		<weather>Weather</weather>
+		<today>Today</today>
+		<temperature>Temperature</temperature>
+		<siblings>Other articles</siblings>
+	</menu>
+	<gallery>Image {current} of {total}</gallery>
+	<language>english</language>
+</content>

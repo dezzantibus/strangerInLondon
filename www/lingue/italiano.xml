@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<content>
+	<header>
+		<breadcrumbs>Sei qui:</breadcrumbs>
+		<link1>Il blog</link1>
+		<link2>Contatti</link2>
+	</header>
+	<menu>
+		<search>Cerca</search>
+		<go>Vai</go>
+		<subjects>Argomenti</subjects>
+		<weather>Meteo</weather>
+		<today>Oggi</today>
+		<temperature>Temperature</temperature>
+		<siblings>Altri articoli</siblings>
+	</menu>
+	<gallery>Immagine {current} di {total}</gallery>
+	<language>italiano</language>
+</content>
