@@ -1,0 +1,243 @@
+@charset "utf-8";
+/* CSS Document */
+
+*{margin:0;padding:0}
+
+body{
+	background:#c5c5c5 repeat-x top url(/images/background.png);
+	font-family:Georgia, "Times New Roman", Times, serif;
+}
+
+.clear{clear:both;}
+
+.spacer10{height:10px;}
+.spacer20{height:20px;}
+
+#header{
+	width:930px;
+	height:152px;
+	background:url(/images/header.jpg);
+	margin:10px auto 0 auto;
+	text-align:right;
+	font-size:11px;
+	font-family:Arial, Helvetica, sans-serif;
+	color:#000;
+	padding:5px 10px;
+}
+
+#header a{color:#000;}
+
+#breadcrumbs{
+	width:930px;
+	height:21px;
+	padding:9px 0 0 20px;
+	margin:auto;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:11px;
+	color:#000;
+}
+
+#breadcrumbs a{color:#000;}
+
+#mainBox{
+	width:950px;
+	margin:auto;
+}
+
+#menu{
+	width:200px;
+	float:left;
+	margin-left:10px;
+}
+
+.menuBox{
+	background:#eeeeee;
+	border:1px solid #afaeae;
+	margin-bottom:10px;
+}
+
+h3{
+	font-size:16px;
+	font-weight:bold;
+	color:#000;
+	padding:12px 0 0 12px;
+}
+
+.menuBox input[type=text]{
+	width:132px;
+	padding:3px;
+	font-size:12px;
+	margin:5px 2px 10px 10px;
+	border:1px solid #afaeae;
+}
+
+.menuBox input[type=submit]{
+	color:#fff;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:14px;
+	font-weight:bold;
+	text-align:center;
+	width:33px;
+	height:24px;
+	background:url(/images/search.png) transparent;
+	border:none;
+}
+
+.menuBox a{
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:11px;
+	margin:10px 5px -5px 12px;
+	color:#d62806;
+	display:block;
+}
+
+#meteoOggi{
+	height:100px;
+	width:140px;
+	padding:70px 0 0 60px;
+	font-family:Arial, Helvetica, sans-serif;
+	font-weight:bold;
+	color:#FFF;
+}
+
+#meteoOggi p{
+	font-size:14px;
+}
+
+#meteoOggi div{
+	font-size:12px;
+	background:url(/images/weather-box.png);
+	width:120px;
+	height:50px;
+	padding:5px;
+}
+
+#forecast img{
+	float:left;
+	margin:0 -30px -10px 10px;
+}
+
+#forecast p{
+	float:left;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:11px;
+	font-weight:bold;
+	margin:10px 0 0 10px;
+}
+
+#colonnaPubblicita{
+	padding:10px;
+	margin-left:10px;
+	float:left;
+	background:#afaeae;
+}
+
+#mainColumn{
+	padding:15px;
+	width:560px;
+	background:#FFF;
+	float:left;
+}
+
+.data{
+	font-size:15px;
+	font-weight:bold;
+	color:#7a8ba1;
+}
+
+#titolo,
+.homeArticle a{
+	font-size:22px;
+	color:#d62806;
+	margin:15px 0;
+	display:block;
+	font-weight:normal;
+}
+
+.homeArticle{
+	border-bottom:1px solid #eeeeee;
+	margin-bottom:20px;
+	padding-bottom:20px;
+}
+
+#testoArticolo,
+.homeArticle div{
+	font-size:12px;
+}
+
+#testoArticolo p{
+	margin-bottom:10px;
+}
+
+#testoArticolo ul{
+	padding-bottom:5px;
+}
+
+#testoArticolo li{
+	margin:0 20px 5px 20px;
+}
+
+h1{
+	font-size:22px;
+	font-weight:bold;
+	color:#d62806;
+	margin:0 0 15px 0;
+	border-bottom:1px solid #eeeeee;
+}
+
+.admin a{
+	font-size:22px;
+	color:#d62806;
+	margin:15px 0;
+	display:block;
+	font-weight:normal;	
+}
+
+.admin input[type=text]{
+	width:200px;
+}
+
+#footer{
+	width:930px;
+	height:30px;
+	color:#FFF;
+	background:#000;
+	margin:10px auto 30px auto;
+	padding:10px;
+	font-size:11px;
+	font-family:Arial, Helvetica, sans-serif;
+}
+
+#footer a{
+	color:#FFF;
+}
+
+h2{
+	font-size:14px;
+	font-weight:bold;
+	margin:10px 0;
+}
+
+#titleLink{
+	font-size:57px;
+	font-family:Georgia, "Times New Roman", Times, serif;
+	display:block;
+	color:#000;
+	text-decoration:none;
+	margin:58px 429px 0 0;
+}
+
+.galleria{
+	margin:0 -20px 0 10px;
+}
+
+.galleria img{
+	margin:0 15px 15px 0 !important;
+}
+
+.banner{
+	margin-bottom:10px;
+}
+
+
+
