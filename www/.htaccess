@@ -1,0 +1,12 @@
+RewriteEngine On
+RewriteBase /
+RewriteRule ^english/$ /?lingua=english [L]
+RewriteRule ^italiano/$ /?lingua=italiano [L]
+
+RewriteRule ^(.*)/([0-9]+)/(.*)/(.*).html$ /articolo.php?lingua=$1&id=$2 [L]
+
+RewriteRule ^(.*)/([0-9]+)/(.*).html$ /categoria.php?lingua=$1&id=$2 [L]
+RewriteRule ^(.*)/([0-9]+)/([0-9]+)/(.*).html$ /categoria.php?lingua=$1&id=$2&pagina=$3 [L]
+
+RewriteRule ^(.*)/Year_([0-9]+)/(.*).html$ /mese.php?lingua=$1&anno=$2&mese=$3 [L]
+RewriteRule ^(.*)/Anno_([0-9]+)/(.*).html$ /mese.php?lingua=$1&anno=$2&mese=$3 [L]
