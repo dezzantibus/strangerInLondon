@@ -51,7 +51,10 @@
 				file_put_contents($file, $xml);
 			}
 			
-			$xml = funzioni::convertCharset($http_response_header, $xml);
+			if(isset($http_response_header))
+			{
+				$xml = funzioni::convertCharset($http_response_header, $xml);
+			}
 			
 			return $xml;
 			

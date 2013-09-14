@@ -55,11 +55,15 @@
 		
 		static function impostaLingua($lingua)
 		{
-			if($lingua != $_SESSION['lingua'])
+			switch(true)
 			{
-				unset($_SESSION);
-				$_SESSION['lingua'] = $lingua;
+				case !isset($_SESSION['lingua']) :
+				case $lingua != $_SESSION['lingua']:
+					unset($_SESSION);
+					$_SESSION['lingua'] = $lingua;
+					break;
 			}
+			
 		}
 		
 		/**************************************************************/
